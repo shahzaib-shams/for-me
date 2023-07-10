@@ -22,6 +22,7 @@
             margin-top: 20px;
             padding: 10px;
             font-size: 20px;
+            width: 300px;
             max-width: 80%;
         }
 
@@ -30,6 +31,7 @@
             padding: 10px 20px;
             font-size: 20px;
             width: 150px;
+            max-width: 80%;
         }
 
         #result {
@@ -45,10 +47,7 @@
         @media only screen and (max-width: 600px) {
             #nameInput, #showButton, #result {
                 max-width: 100%;
-            }
-
-            #showButton {
-                width: 100%;
+                width: 80%;
             }
         }
     </style>
@@ -68,8 +67,8 @@
             const result = document.getElementById("result");
 
             const name = nameInput.value.trim().toLowerCase();
-            if (name !== "shahzaib") {
-                alert("Sorry, only 'shahzaib' is allowed as input.");
+            if (name !== "filzah") {
+                alert("Sorry, this is only for filzah");
                 return;
             }
 
